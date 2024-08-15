@@ -1,4 +1,4 @@
-numbers = [1,1,1,1,5]
+numbers = [5,2,4,5]
 for items in numbers:
     output = ""
     for items in range(items):
