@@ -32,8 +32,44 @@ spicy_foods = [
 #     print(f"{person}:")
 #     for key, value in details.items():
 #         print(f"  {key}: {value}")
+print("**********names*****************")
+# def get_names(food):
+#     for food in spicy_foods:
+#         print(food["name"])
+# get_names(spicy_foods)
 print("***************************")
-def get_names(food):
+
+
+# for food in spicy_foods:
+#     if food["heat_level"]>5:
+#         foods=[]
+#         foods.append(food)
+#         print(foods)
+print("**********comprehension*****************")
+# def get_spiciest_food(foods):
+#     foods =[food for food in spicy_foods if food["heat_level"]>5]
+#     print(foods)
+# get_spiciest_food(spicy_foods)
+print("***************************")
+
+# for food in spicy_foods:
+#     print(food[])
+
+
+# def get_spicy_food_by_cuisine(foods, cuisine):
+#     for food in foods:
+#         if food['cuisine']==cuisine:
+#             print(food)
+       
+# get_spicy_food_by_cuisine(spicy_foods, "American")
+print("***************************")
+
+# initial=2
+# while initial <2:
+
+def print_spicy_foods(food):
     for food in spicy_foods:
-        print(food["name"])
-get_names(spicy_foods)
+        if food["heat_level"]>5:
+            emojis =food["heat_level"] * "🌶"
+            print (f'{food["name"]} ({food["cuisine"]}) | Heat Level: {emojis}')
+print_spicy_foods(spicy_foods)
